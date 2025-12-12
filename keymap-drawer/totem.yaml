@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: totem}
+layout: {zmk_keyboard: totem}
 layers:
   BASE:
   - Q
@@ -21,7 +21,7 @@ layers:
   - {t: E, h: RCMD}
   - {t: I, h: RALT}
   - {t: O, h: RCTRL}
-  - {t: BACKSPACE, h: Meh+ LCMD}
+  - Meh+LCMD
   - Z
   - X
   - C
@@ -32,7 +32,7 @@ layers:
   - ','
   - .
   - /
-  - {t: '''', h: Sft+AGr+Ctl+ RCMD}
+  - {t: '''', h: AltGr+Sft+RIGHT CONTROL}
   - {t: BACKSPACE, h: BT}
   - {t: TAB, h: NAV_SHORT}
   - DELETE
@@ -40,36 +40,36 @@ layers:
   - {t: SPACE, h: NUM_SYM}
   - ENTER
   NAV_SHORT:
-  - Gui+ Q
-  - Gui+ W
-  - Gui+ F
+  - Gui+Q
+  - Gui+W
+  - Gui+F
   - '`'
-  - Ctl+Gui+Sft+ C
+  - Ctl+Gui+Sft+C
   - LEFT
   - DOWN ARROW
   - UP ARROW
   - RIGHT
   - ''
-  - Gui+ A
+  - Gui+A
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Gui+ T, h: LEFT SHIFT}
-  - Gui+Sft+ V
-  - {t: H, h: Ctl+ A}
+  - {t: Gui+T, h: LEFT SHIFT}
+  - Gui+Sft+V
+  - {t: H, h: Ctl+A}
   - J
   - K
-  - {t: L, h: Ctl+ E}
+  - {t: L, h: Ctl+E}
   - ESCAPE
   - DELETE
-  - {t: Gui+ Z, h: Gui+Sft+ Z}
-  - Gui+ X
-  - Gui+ C
+  - {t: Gui+Z, h: Gui+Sft+Z}
+  - Gui+X
+  - Gui+C
   - TAB
-  - {t: Gui+ V, h: Alt+Gui+Sft+ V}
+  - {t: Gui+V, h: Alt+Gui+Sft+V}
   - '0'
-  - Ctl+ D
+  - Ctl+D
   - SPACE
-  - Ctl+ U
+  - Ctl+U
   - $
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -135,9 +135,9 @@ layers:
   - ''
   - ''
   - ''
-  - Gui+Ctl+Sft+ 4
+  - Gui+Ctl+Sft+4
   - ''
-  - Alt+Gui+ ESCAPE
+  - Alt+Gui+ESCAPE
   - ''
   - ''
   - ''
