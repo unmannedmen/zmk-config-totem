@@ -52,10 +52,10 @@
 
         nav_num {
             bindings = <
-           &none         &kp PG_UP        &kp LC(SPACE)    &kp PAGE_DOWN      &none         &kp ESC    &kp HOME         &kp UP_ARROW    &kp END          &none
-           &kp LALT      &kp LC(MINUS)    &kp LS(SPACE)    &kp LS(LC(SEMI))   &kp DELETE    &kp BSPC   &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LC(Z)  &kp LEFT_GUI  &kp LC(PAGE_UP)  &kp LC(K_CMENU)  &kp LC(PAGE_DOWN)  &none         &kp LBKT   &kp F7           &kp F2          &kp F10          &kp F6  &kp TAB
-                                          &none            &none              &none         &kp LC(N)  &kp LC(LS(TAB))  &kp LC(TAB)
+           &none         &kp PG_UP        &kp LC(SPACE)  &kp PAGE_DOWN      &none         &kp ESC    &kp HOME         &kp UP_ARROW    &kp END          &none
+           &kp LALT      &kp LC(MINUS)    &kp LS(SPACE)  &kp LS(LC(SEMI))   &kp DELETE    &kp BSPC   &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(Z)  &kp LEFT_GUI  &kp LC(PAGE_UP)  &kp K_CMENU    &kp LC(PAGE_DOWN)  &none         &kp LBKT   &kp F7           &kp F2          &kp F10          &kp F6  &kp TAB
+                                          &none          &none              &none         &kp LC(N)  &kp LC(LS(TAB))  &kp LC(TAB)
             >;
         };
 
