@@ -31,6 +31,11 @@
             bindings = <&kp LS(SPACE)>;
             key-positions = <33 36>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
     };
 
     keymap {
@@ -47,10 +52,10 @@
 
         nav_num {
             bindings = <
-           &kp N1  &kp N2         &kp N3   &kp N4     &kp N5          &kp N6      &kp N7          &kp UP_ARROW    &kp N9           &kp N0
-           &none   &kp LS(MINUS)  &kp TAB  &kp MINUS  &kp LS(SEMI)    &kp BSPC    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LC(Z)  &kp F6  &kp F7         &kp F2   &kp F10    &kp LS(SQT)     &kp LBKT    &kp HOME        &kp N8          &kp END          &none   &kp DELETE
-                                  &none    &none      &none           &kp DELETE  &none           &kp LGUI
+           &none         &kp PG_UP            &kp LC(SPACE)  &kp PAGE_DOWN          &none         &kp ESC    &kp HOME         &kp UP_ARROW    &kp END          &none
+           &kp LALT      &kp LC(MINUS)        &kp LS(SPACE)  &kp LS(LC(SEMI))       &kp DELETE    &kp BSPC   &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(Z)  &kp LEFT_GUI  &kp LC(LS(PAGE_UP))  &kp LC(N1)     &kp LC(LS(PAGE_DOWN))  &none         &kp LBKT   &kp F7           &kp F2          &kp F10          &kp F6  &kp TAB
+                                              &none          &none                  &none         &kp LC(N)  &kp LC(LS(TAB))  &kp LC(TAB)
             >;
         };
 
@@ -65,10 +70,10 @@
 
         device {
             bindings = <
-       &kp F6  &kp F8  &kp F11  &kp F9      &kp F12       &none          &kp N7        &kp N8     &kp N9  &kp N0
-       &none   &kp F7  &none    &kp F10     &kp F5        &kp BACKSPACE  &kp N4        &kp N5     &kp N6  &trans
-&none  &none   &kp F1  &kp F2   &kp F4      &kp F3        &kp FSLH       &kp N1        &kp N2     &kp N3  &kp DOT  &kp LS(MINUS)
-                       &none    &kp LS(N8)  &kp LS(N9)    &kp LS(SQT)    &kp LS(SEMI)  &kp MINUS
+       &kp F6  &kp F8  &kp F11  &kp F9   &kp F12    &kp LS(N8)     &kp N7        &kp N8     &kp N9  &kp N0
+       &none   &kp F7  &none    &kp F10  &kp F5     &kp BACKSPACE  &kp N4        &kp N5     &kp N6  &kp DOT
+&none  &none   &kp F1  &kp F2   &kp F4   &kp F3     &kp LS(N9)     &kp N1        &kp N2     &kp N3  &kp FSLH  &kp LS(MINUS)
+                       &none    &none    &none      &kp LS(SQT)    &kp LS(SEMI)  &kp MINUS
             >;
         };
 
