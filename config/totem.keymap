@@ -70,10 +70,10 @@
 
         device {
             bindings = <
-               &none          &kp UP_ARROW       &none      &kp DOWN_ARROW   &none        &none          &kp F7            &kp F8         &kp F9  &kp F11
-               &kp LC(SPACE)  &kp LEFT_ARROW     &none      &kp RIGHT_ARROW  &none        &kp BACKSPACE  &kp F4            &kp F5         &kp F6  &kp F10
-&kp LC(LA(V))  &kp LS(SPACE)  &kp LC(PAGE_DOWN)  &none      &kp LC(PAGE_UP)  &none        &none          &kp F1            &kp F2         &kp F3  &kp F12  &none
-                                                 &kp LC(X)  &kp LC(C)        &kp LC(V)    &kp LSHFT      &kp LC(LS(SEMI))  &kp LC(MINUS)
+               &none          &kp UP_ARROW    &kp DOWN_ARROW  &kp DOWN_ARROW     &none        &none          &kp F7            &kp F8         &kp F9  &kp F11
+               &kp LC(SPACE)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &none        &kp BACKSPACE  &kp F4            &kp F5         &kp F6  &kp F10
+&kp LC(LA(V))  &kp LS(SPACE)  &kp LC(PG_UP)   &none           &kp LC(PAGE_DOWN)  &none        &none          &kp F1            &kp F2         &kp F3  &kp F12  &none
+                                              &kp LC(X)       &kp LC(C)          &kp LC(V)    &kp LSHFT      &kp LC(LS(SEMI))  &kp LC(MINUS)
             >;
         };
 
