@@ -61,19 +61,19 @@
 
         sym_func {
             bindings = <
-       &none  &none  &none       &none       &none           &kp SEMI       &kp AMPS    &kp LS(N2)   &kp LS(INTERNATIONAL_1)  &kp TAB
-       &none  &none  &kp LS(N8)  &kp LS(N9)  &none           &kp BACKSPACE  &kp LS(N4)  &kp PERCENT  &kp LS(N6)               &trans
-&none  &none  &none  &kp RBKT    &kp BSLH    &none           &kp SQT        &kp EXCL    &kp HASH     &kp INTERNATIONAL_3      &none    &kp PRINTSCREEN
-                     &kp LALT    &none       &kp LEFT_GUI    &none          &none       &none
+       &none  &none  &none       &none         &kp C_VOLUME_UP      &kp SEMI       &kp AMPS    &kp LS(N2)   &kp LS(INTERNATIONAL_1)  &kp TAB
+       &none  &none  &kp LS(N8)  &kp LS(N9)    &kp C_PLAY_PAUSE     &kp BACKSPACE  &kp LS(N4)  &kp PERCENT  &kp LS(N6)               &trans
+&none  &none  &none  &kp RBKT    &kp BSLH      &kp C_VOLUME_DOWN    &kp SQT        &kp EXCL    &kp HASH     &kp INTERNATIONAL_3      &none    &kp PRINTSCREEN
+                     &kp LALT    &kp LEFT_GUI  &none                &none          &none       &none
             >;
         };
 
         device {
             bindings = <
-               &kp C_VOLUME_UP    &kp LC(MINUS)    &none      &kp LS(LC(SEMI))   &none        &none          &kp F7  &kp F8  &kp F9  &kp F11
-               &kp C_VOLUME_DOWN  &kp LC(SPACE)    &none      &kp LC(SPACE)      &none        &kp BACKSPACE  &kp F4  &kp F5  &kp F6  &kp F10
-&kp LC(LA(V))  &kp C_PP           &kp LC(PAGE_UP)  &none      &kp LC(PAGE_DOWN)  &none        &none          &kp F1  &kp F2  &kp F3  &kp F12  &none
-                                                   &kp LC(X)  &kp LC(C)          &kp LC(V)    &none          &none   &none
+               &none          &kp UP_ARROW       &none      &kp DOWN_ARROW   &none        &none          &kp F7            &kp F8         &kp F9  &kp F11
+               &kp LC(SPACE)  &kp LEFT_ARROW     &none      &kp RIGHT_ARROW  &none        &kp BACKSPACE  &kp F4            &kp F5         &kp F6  &kp F10
+&kp LC(LA(V))  &kp LS(SPACE)  &kp LC(PAGE_DOWN)  &none      &kp LC(PAGE_UP)  &none        &none          &kp F1            &kp F2         &kp F3  &kp F12  &none
+                                                 &kp LC(X)  &kp LC(C)        &kp LC(V)    &kp LSHFT      &kp LC(LS(SEMI))  &kp LC(MINUS)
             >;
         };
 
