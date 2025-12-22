@@ -52,18 +52,18 @@
 
         nav_num {
             bindings = <
-           &kp LS(SQT)    &kp N7  &kp N8     &kp N9  &kp LS(SEMI)    &kp K_APP      &kp HOME        &kp UP_ARROW    &kp END          &kp TAB
-           &kp LS(MINUS)  &kp N4  &kp N5     &kp N6  &kp N0          &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LC(Z)  &kp LSHFT      &kp N1  &kp N2     &kp N3  &kp DOT         &kp LBKT       &kp F7          &kp F2          &kp F10          &trans   &kp DELETE
+           &kp TAB        &kp N7  &kp N8     &kp N9  &kp N0          &kp K_APP      &kp HOME        &kp UP_ARROW    &kp END          &kp TAB
+           &kp LS(MINUS)  &kp N4  &kp N5     &kp N6  &kp LS(SEMI)    &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(Z)  &kp LSHFT      &kp N1  &kp N2     &kp N3  &kp LS(APOS)    &kp LBKT       &kp F7          &kp F2          &kp F10          &trans   &kp DELETE
                                   &kp MINUS  &trans  &kp LSHFT       &kp RSHIFT     &trans          &kp MINUS
             >;
         };
 
         sym_func {
             bindings = <
-        &none  &none  &none       &none         &kp C_VOLUME_UP      &kp SEMI       &kp AMPS    &kp LS(N2)   &kp LS(INTERNATIONAL_1)  &kp TAB
+        &none  &none  &none       &none         &kp C_VOLUME_UP      &kp SQT        &kp AMPS    &kp LS(N2)   &kp LS(INTERNATIONAL_1)  &kp TAB
         &none  &none  &kp LS(N8)  &kp LS(N9)    &kp C_PLAY_PAUSE     &kp BACKSPACE  &kp LS(N4)  &kp PERCENT  &kp LS(N6)               &trans
-&trans  &none  &none  &kp RBKT    &kp BSLH      &kp C_VOLUME_DOWN    &kp SQT        &kp EXCL    &kp HASH     &kp INTERNATIONAL_3      &none    &kp PRINTSCREEN
+&trans  &none  &none  &kp RBKT    &kp BSLH      &kp C_VOLUME_DOWN    &kp SEMI       &kp EXCL    &kp HASH     &kp INTERNATIONAL_3      &none    &kp PRINTSCREEN
                       &kp LALT    &kp LEFT_GUI  &kp LSHFT            &kp RSHFT      &none       &none
             >;
         };
