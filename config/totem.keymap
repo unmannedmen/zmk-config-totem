@@ -52,10 +52,10 @@
 
         nav_num {
             bindings = <
-           &kp LS(SQT)    &kp N7  &kp N8  &kp N9  &kp N0          &kp K_APP      &kp HOME        &kp UP_ARROW    &kp END          &kp TAB
-           &kp LS(MINUS)  &kp N4  &kp N5  &kp N6  &kp DELETE      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LC(Z)  &kp LSHFT      &kp N1  &kp N2  &kp N3  &kp LS(SEMI)    &kp LBKT       &kp F7          &kp F2          &kp F10          &trans   &kp LS(BACKSPACE)
-                                  &none   &trans  &kp LSHFT       &kp RSHIFT     &trans          &kp MINUS
+           &kp LS(SQT)    &kp N7  &kp N8        &kp N9  &kp N0          &kp K_APP      &kp HOME        &kp UP_ARROW    &kp END          &kp TAB
+           &kp LS(MINUS)  &kp N4  &kp N5        &kp N6  &kp DELETE      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(Z)  &kp LSHFT      &kp N1  &kp N2        &kp N3  &kp LS(SEMI)    &kp LBKT       &kp F7          &kp F2          &kp F10          &trans   &kp LS(BACKSPACE)
+                                  &kp LEFT_GUI  &trans  &kp LSHFT       &kp RSHIFT     &trans          &kp MINUS
             >;
         };
 
