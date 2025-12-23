@@ -52,28 +52,28 @@
 
         nav_num {
             bindings = <
-           &kp LS(SQT)    &kp N7  &kp N8        &kp N9  &kp N0          &kp K_APP      &kp HOME        &kp UP_ARROW    &kp END          &kp TAB
-           &kp LS(MINUS)  &kp N4  &kp N5        &kp N6  &kp DELETE      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LC(Z)  &kp LSHFT      &kp N1  &kp N2        &kp N3  &kp LS(SEMI)    &kp LBKT       &kp F7          &kp F2          &kp F10          &trans   &kp LS(BACKSPACE)
-                                  &kp LEFT_GUI  &trans  &kp LSHFT       &kp RSHIFT     &trans          &kp MINUS
+           &kp LS(SQT)  &kp N7  &kp N8        &kp N9  &kp N0          &kp LS(SEMI)   &kp HOME        &kp UP_ARROW    &kp END          &kp TAB
+           &trans       &kp N4  &kp N5        &kp N6  &kp DELETE      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(Z)  &trans       &kp N1  &kp N2        &kp N3  &kp LS(SEMI)    &kp LBKT       &kp F7          &kp F2          &kp F10          &trans   &kp LS(BACKSPACE)
+                                &kp LEFT_GUI  &trans  &trans          &trans         &trans          &kp LS(MINUS)
             >;
         };
 
         sym_func {
             bindings = <
-        &none  &none  &none       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SQT        &kp AMPS    &kp LS(N2)   &kp LS(INTERNATIONAL_1)  &kp TAB
-        &none  &none  &kp LS(N8)  &kp LS(N9)         &kp DELETE         &kp BACKSPACE  &kp LS(N4)  &kp PERCENT  &kp LS(N6)               &trans
-&trans  &none  &none  &kp RBKT    &kp BSLH           &kp C_PP           &kp SEMI       &kp EXCL    &kp HASH     &kp INTERNATIONAL_3      &none    &kp LS(BACKSPACE)
-                      &kp LALT    &kp LEFT_GUI       &kp LSHFT          &kp RSHFT      &none       &none
+           &none   &none  &none       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SQT        &kp AMPS    &kp LS(N2)   &kp LS(INTERNATIONAL_1)  &kp TAB
+           &trans  &none  &kp LS(N8)  &kp LS(N9)         &kp DELETE         &kp BACKSPACE  &kp LS(N4)  &kp PERCENT  &kp LS(N6)               &trans
+&kp K_APP  &trans  &none  &kp RBKT    &kp BSLH           &kp C_PP           &kp SEMI       &kp EXCL    &kp HASH     &kp INTERNATIONAL_3      &trans   &kp LS(BACKSPACE)
+                          &kp LALT    &kp LEFT_GUI       &trans             &trans         &none       &none
             >;
         };
 
         device {
             bindings = <
-        &none  &kp LC(SPACE)  &none      &kp LS(LC(SEMI))   &none                  &none          &kp F7  &kp F8  &kp F9  &kp F11
-        &none  &kp LS(SPACE)  &none      &kp LC(MINUS)      &kp DELETE             &kp BACKSPACE  &kp F4  &kp F5  &kp F6  &kp F10
-&trans  &none  &kp LC(PG_UP)  &none      &kp LC(PAGE_DOWN)  &none                  &none          &kp F1  &kp F2  &kp F3  &kp F12  &kp LS(BACKSPACE)
-                              &kp LC(X)  &kp LC(C)          &mt LC(LA(V)) LC(V)    &kp LSHFT      &none   &none
+           &none   &kp LC(SPACE)  &none      &kp LS(LC(SEMI))   &none                  &kp F11        &kp F7  &kp F8  &kp F9  &kp F10
+           &trans  &kp LS(SPACE)  &none      &kp LC(MINUS)      &kp DELETE             &kp BACKSPACE  &kp F4  &kp F5  &kp F6  &trans
+&kp PSCRN  &trans  &kp LC(PG_UP)  &none      &kp LC(PAGE_DOWN)  &none                  &kp F12        &kp F1  &kp F2  &kp F3  &trans   &kp LS(BACKSPACE)
+                                  &kp LC(X)  &kp LC(C)          &mt LC(LA(V)) LC(V)    &trans         &none   &none
             >;
         };
 
