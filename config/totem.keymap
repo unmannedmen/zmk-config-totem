@@ -44,34 +44,34 @@
         base {
             bindings = <
          &kp Q        &kp W    &kp E         &kp R            &kp T                   &kp Y                  &kp U        &kp I        &kp O        &kp P
-         &mt LCTRL A  &lt 2 S  &lt 3 D       &kp F            &kp G                   &kp H                  &kp J        &kp K        &mt RCTRL L  &kp ENTER
+         &mt LCTRL A  &lt 3 S  &lt 3 D       &kp F            &kp G                   &kp H                  &kp J        &kp K        &mt RCTRL L  &kp ENTER
 &kp ESC  &mt LSHFT Z  &kp X    &mt LC(C) C   &mt LC(LA(V)) V  &kp B                   &kp N                  &kp M        &kp COMMA    &kp DOT      &mt LSHFT FSLH  &kp BACKSPACE
-                               &kp LEFT_ALT  &lt 1 SPACE      &mt LSHFT LANGUAGE_2    &mt RSHIFT LANGUAGE_1  &lt 1 SPACE  &lt 3 MINUS
+                               &kp LEFT_ALT  &lt 2 SPACE      &mt LSHFT LANGUAGE_2    &mt RSHIFT LANGUAGE_1  &lt 2 SPACE  &lt 3 MINUS
             >;
         };
 
         nav_num {
             bindings = <
-           &kp TAB        &kp N7  &kp N8     &kp N9  &kp N0          &kp K_APP      &kp HOME        &kp UP_ARROW    &kp END          &kp TAB
-           &kp LS(MINUS)  &kp N4  &kp N5     &kp N6  &kp LS(SEMI)    &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LC(Z)  &kp LSHFT      &kp N1  &kp N2     &kp N3  &kp LS(APOS)    &kp LBKT       &kp F7          &kp F2          &kp F10          &trans   &kp DELETE
-                                  &kp MINUS  &trans  &kp LSHFT       &kp RSHIFT     &trans          &kp MINUS
+           &kp LS(SQT)    &kp N7  &kp N8  &kp N9  &kp N0          &kp K_APP      &kp HOME        &kp UP_ARROW    &kp END          &kp TAB
+           &kp LS(MINUS)  &kp N4  &kp N5  &kp N6  &kp DELETE      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(Z)  &kp LSHFT      &kp N1  &kp N2  &kp N3  &kp LS(SEMI)    &kp LBKT       &kp F7          &kp F2          &kp F10          &trans   &kp LS(BACKSPACE)
+                                  &none   &trans  &kp LSHFT       &kp RSHIFT     &trans          &kp MINUS
             >;
         };
 
         sym_func {
             bindings = <
-        &none  &none  &none       &none         &kp C_VOLUME_UP      &kp SQT        &kp AMPS    &kp LS(N2)   &kp LS(INTERNATIONAL_1)  &kp TAB
-        &none  &none  &kp LS(N8)  &kp LS(N9)    &kp C_PLAY_PAUSE     &kp BACKSPACE  &kp LS(N4)  &kp PERCENT  &kp LS(N6)               &trans
-&trans  &none  &none  &kp RBKT    &kp BSLH      &kp C_VOLUME_DOWN    &kp SEMI       &kp EXCL    &kp HASH     &kp INTERNATIONAL_3      &none    &kp PRINTSCREEN
-                      &kp LALT    &kp LEFT_GUI  &kp LSHFT            &kp RSHFT      &none       &none
+        &none  &none  &none       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SQT        &kp AMPS    &kp LS(N2)   &kp LS(INTERNATIONAL_1)  &kp TAB
+        &none  &none  &kp LS(N8)  &kp LS(N9)         &kp DELETE         &kp BACKSPACE  &kp LS(N4)  &kp PERCENT  &kp LS(N6)               &trans
+&trans  &none  &none  &kp RBKT    &kp BSLH           &kp C_PP           &kp SEMI       &kp EXCL    &kp HASH     &kp INTERNATIONAL_3      &none    &kp LS(BACKSPACE)
+                      &kp LALT    &kp LEFT_GUI       &kp LSHFT          &kp RSHFT      &none       &none
             >;
         };
 
         device {
             bindings = <
         &none  &kp LC(SPACE)  &none      &kp LS(LC(SEMI))   &none                  &none          &kp F7  &kp F8  &kp F9  &kp F11
-        &none  &kp LS(SPACE)  &none      &kp LC(MINUS)      &none                  &kp BACKSPACE  &kp F4  &kp F5  &kp F6  &kp F10
+        &none  &kp LS(SPACE)  &none      &kp LC(MINUS)      &kp DELETE             &kp BACKSPACE  &kp F4  &kp F5  &kp F6  &kp F10
 &trans  &none  &kp LC(PG_UP)  &none      &kp LC(PAGE_DOWN)  &none                  &none          &kp F1  &kp F2  &kp F3  &kp F12  &kp LS(BACKSPACE)
                               &kp LC(X)  &kp LC(C)          &mt LC(LA(V)) LC(V)    &kp LSHFT      &none   &none
             >;
