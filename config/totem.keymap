@@ -73,7 +73,7 @@
             bindings = <
         &none   &none  &kp C_PP    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SEMI          &kp AMPS    &kp LS(N2)   &kp LS(INTERNATIONAL_1)  &kp TAB
         &trans  &none  &kp LS(N8)  &kp LS(N9)         &kp DELETE         &kp BACKSPACE     &kp LS(N4)  &kp PERCENT  &kp LS(N6)               &trans
-&trans  &trans  &none  &kp RBKT    &kp BSLH           &kp C_PP           &kp SQT           &kp EXCL    &kp HASH     &kp INTERNATIONAL_3      &trans   &kp LS(BACKSPACE)
+&trans  &trans  &none  &kp RBKT    &kp BSLH           &kp C_PP           &kp SQT           &kp EXCL    &kp HASH     &kp INTERNATIONAL_3      &kp LS(FSLH)  &kp LS(BACKSPACE)
                        &kp LC(X)   &kp LC(C)          &mt LC(LA(V)) V    &mt LCTRL DELETE  &kp LALT    &none
             >;
         };
