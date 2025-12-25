@@ -39,31 +39,21 @@
 
         leftctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <11 12>;
+            key-positions = <11 10>;
         };
 
         rightctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <18 17>;
-        };
-
-        q {
-            bindings = <&kp LS(FSLH)>;
-            key-positions = <30 21>;
-        };
-
-        rightshift {
-            bindings = <&kp RSHFT>;
-            key-positions = <28 29>;
+            bindings = <&kp RCTRL>;
+            key-positions = <18 19>;
         };
 
         leftshift {
             bindings = <&kp LSHFT>;
-            key-positions = <22 23>;
+            key-positions = <22 21>;
         };
 
-        win {
-            bindings = <&kp LEFT_GUI>;
+        rightwin {
+            bindings = <&kp RIGHT_GUI>;
             key-positions = <16 17 18>;
         };
 
@@ -75,6 +65,36 @@
         muhenkan {
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <32 37>;
+        };
+
+        rightshift {
+            bindings = <&kp RSHFT>;
+            key-positions = <29 30>;
+        };
+
+        leftwin {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <11 12 13>;
+        };
+
+        leftkakko {
+            bindings = <&kp LS(N8)>;
+            key-positions = <11 13>;
+        };
+
+        rightkakko {
+            bindings = <&kp LS(N9)>;
+            key-positions = <16 18>;
+        };
+
+        leftkagikakko {
+            bindings = <&kp RBKT>;
+            key-positions = <22 24>;
+        };
+
+        rightkagikakko {
+            bindings = <&kp BSLH>;
+            key-positions = <27 29>;
         };
     };
 
@@ -101,10 +121,10 @@
 
         sym_func {
             bindings = <
-        &none   &none  &kp C_PP    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SEMI          &kp AMPS       &kp LS(N2)    &kp HASH             &kp TAB
-        &trans  &none  &kp LS(N8)  &kp LS(N9)         &kp K_APP          &kp BACKSPACE     &kp LS(MINUS)  &kp LS(N6)    &kp LS(N4)           &trans
-&trans  &trans  &none  &kp RBKT    &kp BSLH           &kp C_PP           &kp SQT           &kp EXCL       &kp PRCNT     &kp INTERNATIONAL_3  &kp LS(FSLH)  &kp LS(BACKSPACE)
-                       &kp LC(X)   &kp LC(C)          &mt LC(LA(V)) V    &mt LCTRL DELETE  &kp LALT       &kp LS(FSLH)
+        &none   &none  &kp C_PP   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SEMI          &kp AMPS      &kp LS(N2)    &kp HASH             &kp TAB
+        &trans  &none  &kp LC(C)  &kp LC(V)          &kp K_APP          &kp BACKSPACE     &kp LS(FSLH)  &kp LS(N6)    &kp LS(N4)           &trans
+&trans  &trans  &none  &kp LC(X)  &kp LC(LA(BSLH))   &kp C_PP           &kp SQT           &kp EXCL      &kp PRCNT     &kp INTERNATIONAL_3  &kp LS(FSLH)  &kp LS(BACKSPACE)
+                       &kp LC(X)  &kp LC(C)          &mt LC(LA(V)) V    &mt LCTRL DELETE  &kp LALT      &kp LS(FSLH)
             >;
         };
 
