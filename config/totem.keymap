@@ -96,6 +96,16 @@
             bindings = <&kp BSLH>;
             key-positions = <27 29>;
         };
+
+        leftalt {
+            bindings = <&kp LALT>;
+            key-positions = <22 23 24>;
+        };
+
+        rightalt {
+            bindings = <&kp RALT>;
+            key-positions = <27 28 29>;
+        };
     };
 
     keymap {
@@ -121,19 +131,19 @@
 
         sym_func {
             bindings = <
-        &none   &none  &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP        &kp SEMI          &kp AMPS      &kp LS(N2)    &kp HASH             &kp TAB
-        &trans  &none  &kp LEFT_ARROW  &kp RIGHT_ARROW    &kp K_APP              &kp BACKSPACE     &kp LS(FSLH)  &kp LS(N6)    &kp LS(N4)           &trans
-&trans  &trans  &none  &kp DOWN_ARROW  &kp LC(LA(BSLH))   &kp C_PP               &kp SQT           &kp EXCL      &kp PRCNT     &kp INTERNATIONAL_3  &kp LS(FSLH)  &kp LS(BACKSPACE)
-                       &kp LC(X)       &kp LC(C)          &mt LC(LA(V)) LC(V)    &mt LCTRL DELETE  &kp LALT      &kp LEFT_GUI
+        &none      &none  &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP        &kp SEMI          &kp AMPS      &kp LS(N2)    &kp HASH             &kp TAB
+        &trans     &none  &kp LEFT_ARROW  &kp RIGHT_ARROW    &kp K_APP              &kp BACKSPACE     &kp LS(FSLH)  &kp LS(N6)    &kp LS(N4)           &trans
+&trans  &kp LSHFT  &none  &kp DOWN_ARROW  &none              &kp C_PP               &kp SQT           &kp EXCL      &kp PRCNT     &kp INTERNATIONAL_3  &kp RSHFT  &kp LS(BACKSPACE)
+                          &kp LC(X)       &kp LC(C)          &mt LC(LA(V)) LC(V)    &mt LCTRL DELETE  &kp LALT      &kp LEFT_GUI
             >;
         };
 
         device {
             bindings = <
-           &none   &none          &none          &none              &none               &kp F11           &kp F7         &kp F8         &kp F9  &kp F10
-           &trans  &kp LC(PG_UP)  &none          &kp LC(PAGE_DOWN)  &kp K_APP           &kp BACKSPACE     &kp F4         &kp F5         &kp F6  &trans
-&kp PSCRN  &trans  &kp LS(F11)    &none          &kp LC(N1)         &none               &kp F12           &kp F1         &kp F2         &kp F3  &trans   &kp LS(BACKSPACE)
-                                  &kp LC(MINUS)  &kp LS(SPACE)      &kp LC(LS(SEMI))    &kp LC(LS(SEMI))  &kp LC(SPACE)  &kp LC(MINUS)
+           &none      &none          &none          &none              &none               &kp F11           &kp F7         &kp F8         &kp F9  &kp F10
+           &trans     &kp LC(PG_UP)  &none          &kp LC(PAGE_DOWN)  &kp K_APP           &kp BACKSPACE     &kp F4         &kp F5         &kp F6  &trans
+&kp PSCRN  &kp LSHFT  &kp LS(F11)    &none          &kp LC(N1)         &none               &kp F12           &kp F1         &kp F2         &kp F3  &kp RSHFT  &kp LS(BACKSPACE)
+                                     &kp LC(MINUS)  &kp LS(SPACE)      &kp LC(LS(SEMI))    &kp LC(LS(SEMI))  &kp LC(SPACE)  &kp LC(MINUS)
             >;
         };
 
