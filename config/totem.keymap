@@ -29,7 +29,7 @@
 
         halfspace {
             bindings = <&kp LS(SPACE)>;
-            key-positions = <33 36>;
+            key-positions = <34 35>;
         };
 
         tab {
@@ -47,29 +47,9 @@
             key-positions = <18 19>;
         };
 
-        leftshift {
-            bindings = <&kp LSHFT>;
-            key-positions = <22 21>;
-        };
-
-        rightwin {
-            bindings = <&kp RIGHT_GUI>;
-            key-positions = <16 17 18>;
-        };
-
-        henkan {
-            bindings = <&kp INTERNATIONAL_4>;
-            key-positions = <34 35>;
-        };
-
         muhenkan {
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <32 37>;
-        };
-
-        rightshift {
-            bindings = <&kp RSHFT>;
-            key-positions = <29 30>;
         };
 
         leftwin {
@@ -106,6 +86,26 @@
             bindings = <&kp RALT>;
             key-positions = <27 28 29>;
         };
+
+        lang1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <35 17>;
+        };
+
+        lang2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <35 16>;
+        };
+
+        henkan {
+            bindings = <&kp INTERNATIONAL_4>;
+            key-positions = <33 36>;
+        };
+
+        rightgui {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <16 17 18>;
+        };
     };
 
     keymap {
@@ -113,37 +113,37 @@
 
         base {
             bindings = <
-         &kp Q        &kp W    &kp E         &kp R        &kp T                   &kp Y                 &kp U        &kp I      &kp O    &kp P
-         &mt LCTRL A  &lt 2 S  &lt 3 D       &kp F        &kp G                   &kp H                 &kp J        &kp K      &kp L    &kp ENTER
-&kp ESC  &kp Z        &kp X    &kp C         &kp V        &kp B                   &kp N                 &kp M        &kp COMMA  &kp DOT  &kp FSLH   &kp LS(BACKSPACE)
-                               &kp LEFT_ALT  &lt 1 SPACE  &mt LSHFT LANGUAGE_2    &mt RSHFT LANGUAGE_1  &lt 1 SPACE  &kp LCTRL
+         &kp Q        &kp W    &kp E         &kp R             &kp T          &kp Y      &kp U                &kp I      &kp O    &kp P
+         &mt LCTRL A  &lt 2 S  &lt 3 D       &kp F             &kp G          &kp H      &kp J                &kp K      &kp L    &kp ENTER
+&kp ESC  &kp Z        &kp X    &kp C         &kp V             &kp B          &kp N      &kp M                &kp COMMA  &kp DOT  &kp FSLH   &kp LS(BACKSPACE)
+                               &kp LEFT_ALT  &mt LSHFT DELETE  &lt 1 SPACE    &kp SPACE  &mt RSHFT BACKSPACE  &kp LCTRL
             >;
         };
 
         nav_num {
             bindings = <
-           &kp N6     &kp N7        &kp N8         &kp N9        &kp N0     &kp LG(Z)         &kp HOME             &kp UP_ARROW     &kp END          &kp TAB
-           &kp N1     &kp N2        &kp N3         &kp N4        &kp N5     &kp BACKSPACE     &kp LEFT_ARROW       &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans
-&kp LC(Z)  &kp LSHFT  &kp LS(APOS)  &kp LS(MINUS)  &kp LS(SEMI)  &kp DOT    &kp LBKT          &kp F7               &kp F2           &kp F10          &trans   &kp LS(BACKSPACE)
-                                    &kp LEFT_GUI   &trans        &trans     &mt LCTRL DELETE  &mt LA(LC(V)) LC(V)  &mt LC(X) LC(C)
+           &kp N1     &kp N2         &kp N3           &kp N4               &kp N5       &kp N6         &kp N7          &kp N8          &kp N9           &kp N0
+           &kp TAB    &kp F7         &kp F2           &kp F10              &kp K_APP    &kp BACKSPACE  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans
+&kp LC(Z)  &kp LSHFT  &kp LS(MINUS)  &mt LC(X) LC(C)  &mt LA(LC(V)) LC(V)  &kp LC(B)    &kp LS(SEMI)   &kp HOME        &kp DOWN_ARROW  &kp END          &kp LS(SQT)  &kp LS(BACKSPACE)
+                                     &kp LEFT_GUI     &trans               &trans       &trans         &trans          &trans
             >;
         };
 
         sym_func {
             bindings = <
-        &none      &none  &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SEMI          &kp AMPS      &kp LS(N2)    &kp HASH             &kp TAB
-        &trans     &none  &kp LEFT_ARROW  &kp RIGHT_ARROW    &kp K_APP          &kp BACKSPACE     &kp LS(FSLH)  &kp LS(N6)    &kp LS(N4)           &trans
-&trans  &kp LSHFT  &none  &kp DOWN_ARROW  &none              &kp C_PP           &kp SQT           &kp EXCL      &kp PRCNT     &kp INTERNATIONAL_3  &kp RSHFT  &kp LS(BACKSPACE)
-                          &trans          &trans             &trans             &mt LCTRL DELETE  &kp LALT      &kp LEFT_GUI
+        &none      &none  &kp C_PP           &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SEMI          &kp SQT       &kp AMPS    &kp LS(N2)           &kp HASH
+        &trans     &none  &kp LS(N8)         &kp LS(N9)         &kp K_APP          &kp BACKSPACE     &kp LS(FSLH)  &kp LS(N6)  &kp LS(N4)           &trans
+&trans  &kp LSHFT  &none  &kp RIGHT_BRACKET  &kp BSLH           &none              &kp LEFT_BRACKET  &kp EXCL      &kp PRCNT   &kp INTERNATIONAL_3  &kp RSHFT  &kp LS(BACKSPACE)
+                          &trans             &trans             &trans             &trans            &trans        &trans
             >;
         };
 
         device {
             bindings = <
-           &none      &none          &none          &none              &none               &kp F11           &kp F7         &kp F8         &kp F9  &kp F10
-           &trans     &kp LC(PG_UP)  &none          &kp LC(PAGE_DOWN)  &kp K_APP           &kp BACKSPACE     &kp F4         &kp F5         &kp F6  &trans
-&kp PSCRN  &kp LSHFT  &kp LS(F11)    &none          &kp LC(N1)         &none               &kp F12           &kp F1         &kp F2         &kp F3  &kp RSHFT  &kp LS(BACKSPACE)
-                                     &kp LC(MINUS)  &kp LS(SPACE)      &kp LC(LS(SEMI))    &kp LC(LS(SEMI))  &kp LC(SPACE)  &kp LC(MINUS)
+           &none      &none          &none          &none              &none        &kp F11        &kp F7         &kp F8         &kp F9  &kp F10
+           &trans     &kp LC(PG_UP)  &none          &kp LC(PAGE_DOWN)  &kp K_APP    &kp BACKSPACE  &kp F4         &kp F5         &kp F6  &trans
+&kp PSCRN  &kp LSHFT  &kp LS(F11)    &none          &kp LC(N1)         &none        &kp F12        &kp F1         &kp F2         &kp F3  &kp RSHFT  &kp LS(BACKSPACE)
+                                     &kp LC(MINUS)  &kp LC(LS(SEMI))   &trans       &trans         &kp LS(SPACE)  &kp LC(SPACE)
             >;
         };
 
