@@ -47,16 +47,6 @@
             key-positions = <18 19>;
         };
 
-        muhenkan {
-            bindings = <&kp INT_MUHENKAN>;
-            key-positions = <32 37>;
-        };
-
-        leftwin {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <11 12 13>;
-        };
-
         leftkakko {
             bindings = <&kp LS(N8)>;
             key-positions = <11 13>;
@@ -67,24 +57,14 @@
             key-positions = <16 18>;
         };
 
-        leftkagikakko {
-            bindings = <&kp RBKT>;
-            key-positions = <22 24>;
-        };
-
-        rightkagikakko {
-            bindings = <&kp BSLH>;
-            key-positions = <27 29>;
-        };
-
         lang1 {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <35 17>;
+            key-positions = <35 16>;
         };
 
         lang2 {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <35 16>;
+            key-positions = <35 15>;
         };
 
         henkan {
@@ -92,9 +72,24 @@
             key-positions = <33 36>;
         };
 
-        rightgui {
-            bindings = <&kp RIGHT_GUI>;
+        leftkakkojp {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <11 12 13>;
+        };
+
+        rightkakkojp {
+            bindings = <&kp BSLH>;
             key-positions = <16 17 18>;
+        };
+
+        eq {
+            bindings = <&kp LS(SEMI)>;
+            key-positions = <2 3>;
+        };
+
+        asta {
+            bindings = <&kp LS(SQT)>;
+            key-positions = <6 7>;
         };
     };
 
@@ -103,37 +98,37 @@
 
         base {
             bindings = <
-         &kp Q        &kp W    &kp E         &kp R                        &kp T          &kp Y      &kp U                           &kp I      &kp O    &kp P
-         &kp A        &lt 2 S  &lt 3 D       &kp F                        &kp G          &kp H      &kp J                           &kp K      &kp L    &kp ENTER
-&kp ESC  &mt LSHFT Z  &kp X    &kp C         &kp V                        &kp B          &kp N      &kp M                           &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &kp LS(BACKSPACE)
-                               &kp LEFT_ALT  &mt INT_MUHENKAN LANGUAGE_2  &lt 1 SPACE    &kp SPACE  &mt INTERNATIONAL_4 LANGUAGE_1  &kp LCTRL
+         &kp Q        &kp W    &kp E         &kp R             &kp T          &kp Y      &kp U                           &kp I      &kp O    &kp P
+         &kp A        &lt 2 S  &lt 3 D       &kp F             &kp G          &kp H      &kp J                           &kp K      &kp L    &kp ENTER
+&kp ESC  &mt LSHFT Z  &kp X    &kp C         &kp V             &kp B          &kp N      &kp M                           &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &kp LS(BACKSPACE)
+                               &kp LEFT_ALT  &lt 2 LANGUAGE_2  &lt 1 SPACE    &kp SPACE  &mt INTERNATIONAL_4 LANGUAGE_5  &kp LCTRL
             >;
         };
 
         nav_num {
             bindings = <
-           &kp N1   &kp N2         &kp N3           &kp N4               &kp N5       &kp N6         &kp N7          &kp N8          &kp N9           &kp N0
-           &kp TAB  &kp F7         &kp F2           &kp F10              &kp K_APP    &kp BACKSPACE  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans
-&kp LC(Z)  &trans   &kp LS(MINUS)  &mt LC(X) LC(C)  &mt LA(LC(V)) LC(V)  &kp LC(B)    &kp LS(SEMI)   &kp HOME        &kp DOWN_ARROW  &kp END          &kp LS(SQT)  &kp LS(BACKSPACE)
-                                   &kp LEFT_GUI     &trans               &trans       &kp DELETE     &kp RIGHT_ALT   &kp LEFT_GUI
+           &kp K_APP  &kp N7  &kp N8        &kp N9  &kp N0                 &kp LS(FSLH)      &kp HOME        &kp UP_ARROW    &kp END          &kp N0
+           &kp TAB    &kp N4  &kp N5        &kp N6  &mt LC(X) LC(C)        &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LC(Z)  &kp LSHFT  &kp N1  &kp N2        &kp N3  &mt LA(LC(V)) LC(V)    &kp LEFT_BRACKET  &kp F7          &kp F2          &kp F10          &kp RSHFT  &kp LS(BACKSPACE)
+                              &kp LEFT_GUI  &trans  &trans                 &kp DELETE        &kp RIGHT_ALT   &kp LEFT_GUI
             >;
         };
 
         sym_func {
             bindings = <
-        &none   &none  &kp C_PP           &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SEMI          &kp SQT       &kp AMPS    &kp LS(N2)           &kp HASH
-        &trans  &none  &kp LS(N8)         &kp LS(N9)         &kp K_APP          &kp BACKSPACE     &kp LS(FSLH)  &kp LS(N6)  &kp LS(N4)           &trans
-&trans  &trans  &none  &kp RIGHT_BRACKET  &kp BSLH           &none              &kp LEFT_BRACKET  &kp EXCL      &kp PRCNT   &kp INTERNATIONAL_3  &kp RSHFT  &kp LS(BACKSPACE)
-                       &trans             &trans             &trans             &trans            &trans        &trans
+              &kp C_PP      &none  &kp LS(MINUS)      &kp LS(SEMI)  &kp LS(SQT)    &kp SEMI          &kp SQT       &kp AMPS    &kp LS(N2)           &kp HASH
+              &kp C_VOL_DN  &none  &kp LS(N8)         &kp LS(N9)    &kp K_APP      &kp BACKSPACE     &kp LS(FSLH)  &kp LS(N6)  &kp LS(N4)           &trans
+&kp C_VOL_UP  &kp LSHFT     &none  &kp RIGHT_BRACKET  &kp BSLH      &none          &kp LEFT_BRACKET  &kp EXCL      &kp PRCNT   &kp INTERNATIONAL_3  &kp RSHFT  &kp LS(BACKSPACE)
+                                   &trans             &trans        &trans         &trans            &trans        &trans
             >;
         };
 
         device {
             bindings = <
-           &none   &none          &none          &none              &none        &kp F11        &kp F7         &kp F8         &kp F9  &kp F10
-           &trans  &kp LC(PG_UP)  &none          &kp LC(PAGE_DOWN)  &kp K_APP    &kp BACKSPACE  &kp F4         &kp F5         &kp F6  &trans
-&kp PSCRN  &trans  &kp LS(F11)    &none          &kp LC(N1)         &none        &kp F12        &kp F1         &kp F2         &kp F3  &kp RSHFT  &kp LS(BACKSPACE)
-                                  &kp LC(MINUS)  &kp LC(LS(SEMI))   &trans       &trans         &kp LS(SPACE)  &kp LC(SPACE)
+           &none      &none          &none          &none              &none        &kp F11        &kp F7         &kp F8         &kp F9  &kp F10
+           &trans     &kp LC(PG_UP)  &none          &kp LC(PAGE_DOWN)  &kp K_APP    &kp BACKSPACE  &kp F4         &kp F5         &kp F6  &trans
+&kp PSCRN  &kp LSHFT  &kp LS(F11)    &none          &kp LC(N1)         &none        &kp F12        &kp F1         &kp F2         &kp F3  &kp RSHFT  &kp LS(BACKSPACE)
+                                     &kp LC(MINUS)  &kp LC(LS(SEMI))   &trans       &trans         &kp LS(SPACE)  &kp LC(SPACE)
             >;
         };
 
