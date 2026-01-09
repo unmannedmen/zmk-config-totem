@@ -59,12 +59,12 @@
 
         lang1 {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <35 16>;
+            key-positions = <35 17>;
         };
 
         lang2 {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <35 15>;
+            key-positions = <35 16>;
         };
 
         henkan {
@@ -82,14 +82,24 @@
             key-positions = <16 17 18>;
         };
 
-        eq {
+        plus {
             bindings = <&kp LS(SEMI)>;
-            key-positions = <2 3>;
+            key-positions = <6 7>;
         };
 
         asta {
             bindings = <&kp LS(SQT)>;
-            key-positions = <6 7>;
+            key-positions = <2 3>;
+        };
+
+        eq {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <1 2 3>;
+        };
+
+        q {
+            bindings = <&kp LS(FSLH)>;
+            key-positions = <17 18>;
         };
     };
 
@@ -101,13 +111,13 @@
          &kp Q        &kp W    &kp E         &kp R             &kp T          &kp Y      &kp U                           &kp I      &kp O    &kp P
          &kp A        &lt 2 S  &lt 3 D       &kp F             &kp G          &kp H      &kp J                           &kp K      &kp L    &kp ENTER
 &kp ESC  &mt LSHFT Z  &kp X    &kp C         &kp V             &kp B          &kp N      &kp M                           &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &kp LS(BACKSPACE)
-                               &kp LEFT_ALT  &lt 2 LANGUAGE_2  &lt 1 SPACE    &kp SPACE  &mt INTERNATIONAL_4 LANGUAGE_5  &kp LCTRL
+                               &kp LEFT_ALT  &lt 2 LANGUAGE_2  &lt 1 SPACE    &kp SPACE  &mt INTERNATIONAL_4 LANGUAGE_1  &kp LCTRL
             >;
         };
 
         nav_num {
             bindings = <
-           &kp K_APP  &kp N7  &kp N8        &kp N9  &kp N0                 &kp LS(FSLH)      &kp HOME        &kp UP_ARROW    &kp END          &kp N0
+           &kp K_APP  &kp N7  &kp N8        &kp N9  &kp N0                 &kp LS(FSLH)      &kp HOME        &kp UP_ARROW    &kp END          &none
            &kp TAB    &kp N4  &kp N5        &kp N6  &mt LC(X) LC(C)        &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &kp LC(Z)  &kp LSHFT  &kp N1  &kp N2        &kp N3  &mt LA(LC(V)) LC(V)    &kp LEFT_BRACKET  &kp F7          &kp F2          &kp F10          &kp RSHFT  &kp LS(BACKSPACE)
                               &kp LEFT_GUI  &trans  &trans                 &kp DELETE        &kp RIGHT_ALT   &kp LEFT_GUI
@@ -116,10 +126,10 @@
 
         sym_func {
             bindings = <
-              &kp C_PP      &none  &kp LS(MINUS)      &kp LS(SEMI)  &kp LS(SQT)    &kp SEMI          &kp SQT       &kp AMPS    &kp LS(N2)           &kp HASH
-              &kp C_VOL_DN  &none  &kp LS(N8)         &kp LS(N9)    &kp K_APP      &kp BACKSPACE     &kp LS(FSLH)  &kp LS(N6)  &kp LS(N4)           &trans
-&kp C_VOL_UP  &kp LSHFT     &none  &kp RIGHT_BRACKET  &kp BSLH      &none          &kp LEFT_BRACKET  &kp EXCL      &kp PRCNT   &kp INTERNATIONAL_3  &kp RSHFT  &kp LS(BACKSPACE)
-                                   &trans             &trans        &trans         &trans            &trans        &trans
+       &kp K_APP  &none  &kp C_VOL_UP       &kp C_VOL_DN  &kp LS(C_PP)    &kp SEMI          &kp SQT       &kp AMPS    &kp LS(N2)           &kp HASH
+       &none      &none  &kp LS(N8)         &kp LS(N9)    &none           &kp BACKSPACE     &kp LS(FSLH)  &kp LS(N6)  &kp LS(N4)           &trans
+&none  &kp LSHFT  &none  &kp RIGHT_BRACKET  &kp BSLH      &none           &kp LEFT_BRACKET  &kp EXCL      &kp PRCNT   &kp INTERNATIONAL_3  &kp RSHFT  &kp LS(BACKSPACE)
+                         &trans             &trans        &trans          &trans            &trans        &trans
             >;
         };
 
