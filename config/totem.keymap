@@ -59,12 +59,12 @@
 
         lang1 {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <35 17>;
+            key-positions = <35 16>;
         };
 
         lang2 {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <35 16>;
+            key-positions = <35 27>;
         };
 
         henkan {
@@ -101,6 +101,11 @@
             bindings = <&kp LS(FSLH)>;
             key-positions = <17 18>;
         };
+
+        shifttab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <12 11>;
+        };
     };
 
     keymap {
@@ -108,10 +113,10 @@
 
         base {
             bindings = <
-                  &kp Q        &kp W    &kp E         &kp R             &kp T          &kp Y      &kp U                           &kp I      &kp O    &kp P
-                  &kp A        &lt 2 S  &lt 3 D       &kp F             &kp G          &kp H      &kp J                           &kp K      &kp L    &kp ENTER
-&mt LCTRL ESCAPE  &mt LSHFT Z  &kp X    &kp C         &kp V             &kp B          &kp N      &kp M                           &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &kp LS(BACKSPACE)
-                                        &kp LEFT_ALT  &lt 2 LANGUAGE_2  &lt 1 SPACE    &kp SPACE  &mt INTERNATIONAL_4 LANGUAGE_1  &kp LCTRL
+                  &kp Q        &kp W    &kp E         &kp R                        &kp T          &kp Y      &kp U                           &kp I      &kp O    &kp P
+                  &kp A        &lt 2 S  &lt 3 D       &kp F                        &kp G          &kp H      &kp J                           &kp K      &kp L    &kp ENTER
+&mt LCTRL ESCAPE  &mt LSHFT Z  &kp X    &kp C         &kp V                        &kp B          &kp N      &kp M                           &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &kp LS(BACKSPACE)
+                                        &kp LEFT_ALT  &mt INT_MUHENKAN LANGUAGE_2  &lt 1 SPACE    &kp SPACE  &mt INTERNATIONAL_4 LANGUAGE_1  &kp LCTRL
             >;
         };
 
@@ -119,7 +124,7 @@
             bindings = <
         &kp LC(Z)  &kp N7  &kp N8        &kp N9  &kp N0                 &kp PAGE_UP      &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN
         &kp TAB    &kp N4  &kp N5        &kp N6  &kp K_APP              &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp LSHFT  &kp N1  &kp N2        &kp N3  &mt LA(LC(V)) LC(V)    &mt LC(X) LC(C)  &kp F7          &kp F2          &kp F10          &kp RSHFT      &kp LS(BACKSPACE)
+&trans  &trans     &kp N1  &kp N2        &kp N3  &mt LA(LC(V)) LC(V)    &mt LC(X) LC(C)  &kp F7          &kp F2          &kp F10          &trans         &trans
                            &kp LEFT_GUI  &trans  &trans                 &kp DELETE       &kp RIGHT_ALT   &kp LEFT_GUI
             >;
         };
@@ -128,7 +133,7 @@
             bindings = <
         &kp LC(Z)  &none  &kp C_VOL_UP       &kp C_VOL_DN  &kp LS(C_PP)    &kp SEMI          &kp SQT       &kp AMPS    &kp LS(N2)           &kp HASH
         &none      &none  &kp LS(N8)         &kp LS(N9)    &kp K_APP       &kp BACKSPACE     &kp LS(FSLH)  &kp LS(N6)  &kp LS(N4)           &trans
-&trans  &kp LSHFT  &none  &kp RIGHT_BRACKET  &kp BSLH      &none           &kp LEFT_BRACKET  &kp EXCL      &kp PRCNT   &kp INTERNATIONAL_3  &kp RSHFT  &kp LS(BACKSPACE)
+&trans  &trans     &none  &kp RIGHT_BRACKET  &kp BSLH      &none           &kp LEFT_BRACKET  &kp EXCL      &kp PRCNT   &kp INTERNATIONAL_3  &trans    &trans
                           &trans             &trans        &trans          &trans            &trans        &trans
             >;
         };
@@ -137,7 +142,7 @@
             bindings = <
         &kp LC(Z)  &none          &none          &none              &none        &kp F11        &kp F7         &kp F8         &kp F9  &kp F10
         &trans     &kp LC(PG_UP)  &none          &kp LC(PAGE_DOWN)  &kp K_APP    &kp BACKSPACE  &kp F4         &kp F5         &kp F6  &trans
-&trans  &kp LSHFT  &kp LS(F11)    &none          &kp LC(N1)         &none        &kp F12        &kp F1         &kp F2         &kp F3  &kp RSHFT  &kp LS(BACKSPACE)
+&trans  &trans     &kp LS(F11)    &none          &kp LC(N1)         &none        &kp F12        &kp F1         &kp F2         &kp F3  &trans   &kp LS(BACKSPACE)
                                   &kp LC(MINUS)  &kp LC(LS(SEMI))   &trans       &trans         &kp LS(SPACE)  &kp LC(SPACE)
             >;
         };
