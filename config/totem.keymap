@@ -128,7 +128,7 @@
         nav_num {
             bindings = <
         &kp LC(Z)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END          &kp PAGE_DOWN
-        &kp TAB    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DOT            &kp BACKSPACE    &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans
+        &kp TAB    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DOT         &kp BACKSPACE    &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans
 &trans  &trans     &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3  &kp K_APP          &mt LC(X) LC(C)  &kp F7           &kp F2           &kp F10          &trans         &trans
                                     &kp LEFT_GUI     &trans           &trans             &kp DELETE       &mt LC(X) LC(C)  &mt LA(LC(V)) V
             >;
@@ -136,10 +136,10 @@
 
         sym_func {
             bindings = <
-        &kp LC(Z)  &kp N7  &kp N8        &kp N9        &kp N0       &kp SPACE         &kp SPACE       &kp AMPS    &kp LS(N2)           &kp HASH
-        &none      &kp N4  &kp N5        &kp N6        &kp DOT      &kp BACKSPACE     &kp LS(FSLH)    &kp LS(N6)  &kp LS(N4)           &trans
-&trans  &trans     &kp N1  &kp N2        &kp N3        &kp K_APP    &kp LEFT_BRACKET  &kp EXCL        &kp PRCNT   &kp INTERNATIONAL_3  &trans    &trans
-                           &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP     &kp LANGUAGE_2    &kp LANGUAGE_1  &trans
+        &kp LC(Z)  &kp N7  &kp N8        &kp N9        &kp N0        &kp SPACE         &kp SPACE       &kp AMPS    &kp LS(N2)           &kp HASH
+        &none      &kp N4  &kp N5        &kp N6        &kp KP_DOT    &kp BACKSPACE     &kp LS(FSLH)    &kp LS(N6)  &kp LS(N4)           &trans
+&trans  &trans     &kp N1  &kp N2        &kp N3        &kp K_APP     &kp LEFT_BRACKET  &kp EXCL        &kp PRCNT   &kp INTERNATIONAL_3  &trans    &trans
+                           &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP      &kp LANGUAGE_2    &kp LANGUAGE_1  &trans
             >;
         };
 
