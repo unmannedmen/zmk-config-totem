@@ -32,8 +32,8 @@
             key-positions = <34 35>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
+        ly3 {
+            bindings = <&mo 3>;
             key-positions = <12 13>;
         };
 
@@ -102,8 +102,8 @@
             key-positions = <17 18>;
         };
 
-        shifttab {
-            bindings = <&kp LS(TAB)>;
+        ly2 {
+            bindings = <&mo 2>;
             key-positions = <12 11>;
         };
 
@@ -118,19 +118,19 @@
 
         base {
             bindings = <
-                  &kp Q  &kp W    &kp E         &kp R          &kp T          &kp Y        &kp U               &kp I         &kp O    &kp P
-                  &kp A  &kp S    &kp D         &kp F          &kp G          &kp H        &kp J               &kp K         &kp L    &kp LS(BACKSPACE)
-&mt LSHFT ESCAPE  &kp Z  &lt 2 X  &kp C         &lt 3 V        &kp B          &kp N        &kp M               &kp COMMA     &kp DOT  &kp FSLH           &mt RSHIFT ENTER
-                                  &kp LEFT_ALT  &mt LCTRL TAB  &lt 1 SPACE    &lt 2 ENTER  &mt LCTRL LS(BSPC)  &kp LEFT_GUI
+                  &kp Q  &kp W  &kp E         &kp R                         &kp T          &kp Y                    &kp U          &kp I      &kp O    &kp P
+                  &kp A  &kp S  &kp D         &kp F                         &kp G          &kp H                    &kp J          &kp K      &kp L    &kp ENTER
+&mt LSHFT ESCAPE  &kp Z  &kp X  &kp C         &kp V                         &kp B          &kp N                    &kp M          &kp COMMA  &kp DOT  &kp FSLH   &mt RSHIFT LS(BACKSPACE)
+                                &kp LEFT_GUI  &mt LEFT_ALT INTERNATIONAL_4  &lt 1 SPACE    &mt LSHFT LS(BACKSPACE)  &mt LCTRL TAB  &kp LALT
             >;
         };
 
         nav_num {
             bindings = <
-        &kp LC(Z)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &kp PAGE_UP      &kp HOME         &kp UP_ARROW     &kp END          &kp PAGE_DOWN
-        &kp TAB    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DOT         &kp BACKSPACE    &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans
-&trans  &trans     &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3  &kp K_APP          &mt LC(X) LC(C)  &kp F7           &kp F2           &kp F10          &trans         &trans
-                                    &kp LEFT_GUI     &trans           &trans             &kp DELETE       &mt LC(X) LC(C)  &mt LA(LC(V)) V
+        &kp LC(Z)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &kp PAGE_UP    &kp HOME         &kp UP_ARROW     &kp END          &kp PAGE_DOWN
+        &kp TAB    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DOT         &kp BACKSPACE  &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans
+&trans  &trans     &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3  &kp K_APP          &kp F6         &kp F7           &kp F2           &kp F10          &trans         &trans
+                                    &kp LEFT_GUI     &trans           &trans             &kp DELETE     &mt LC(X) LC(C)  &mt LA(LC(V)) V
             >;
         };
 
