@@ -27,7 +27,7 @@
             key-positions = <27 28>;
         };
 
-        lang2 {
+        lang202 {
             bindings = <&kp LANG2>;
             key-positions = <34 35>;
         };
@@ -60,11 +60,6 @@
         lang1 {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <35 16>;
-        };
-
-        lang2 {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <35 27>;
         };
 
         kakkojp2 {
@@ -119,8 +114,8 @@
         base {
             bindings = <
                   &kp Q  &kp W    &kp E         &kp R                         &kp T          &kp Y            &kp U      &kp I            &kp O    &kp P
-                  &kp A  &lt 2 S  &lt 3 D       &kp F                         &kp G          &kp H            &kp J      &kp K            &kp L    &mt RCTRL ENTER
-&mt LSHFT ESCAPE  &kp Z  &kp X    &kp C         &kp V                         &kp B          &kp N            &kp M      &kp COMMA        &kp DOT  &kp FSLH         &mt RSHFT BACKSPACE
+                  &kp A  &lt 2 S  &lt 3 D       &kp F                         &kp G          &kp H            &kp J      &kp K            &kp L    &kp ENTER
+&mt LSHFT ESCAPE  &kp Z  &kp X    &kp C         &kp V                         &kp B          &kp N            &kp M      &kp COMMA        &kp DOT  &kp FSLH   &mt RSHFT BACKSPACE
                                   &kp LEFT_GUI  &mt LEFT_ALT INTERNATIONAL_4  &lt 1 SPACE    &mt LCTRL SPACE  &lt 2 TAB  &lt 3 LS(SPACE)
             >;
         };
