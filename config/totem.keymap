@@ -101,6 +101,11 @@
             bindings = <&mo 2>;
             key-positions = <12 11>;
         };
+
+        q202 {
+            bindings = <&kp LS(FSLH)>;
+            key-positions = <35 18>;
+        };
     };
 
     keymap {
@@ -126,9 +131,9 @@
 
         sym_func {
             bindings = <
-        &kp N6     &kp N7     &kp N8        &kp N9        &kp N0      &kp SEMI          &kp SQT         &kp AMPS    &kp LS(N2)           &kp HASH
-        &kp N1     &kp N2     &kp N3        &kp N4        &kp N5      &kp BACKSPACE     &kp LS(FSLH)    &kp LS(N6)  &kp LS(N4)           &kp TAB
-&trans  &kp LC(Z)  &kp K_APP  &none         &none         &kp DOT     &kp LEFT_BRACKET  &kp EXCL        &kp PRCNT   &kp INTERNATIONAL_3  &trans    &trans
+        &kp N6     &kp N7     &kp N8        &kp N9        &kp N0      &kp SEMI          &kp SQT         &kp AMPS    &kp LS(N2)           &kp DEL
+        &kp N1     &kp N2     &kp N3        &kp N4        &kp N5      &kp BACKSPACE     &kp EXCL        &kp LS(N6)  &kp HASH             &kp TAB
+&trans  &kp LC(Z)  &kp K_APP  &none         &none         &kp DOT     &kp LEFT_BRACKET  &kp LS(N4)      &kp PRCNT   &kp INTERNATIONAL_3  &trans   &trans
                               &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP    &kp LANGUAGE_2    &kp LANGUAGE_1  &trans
             >;
         };
