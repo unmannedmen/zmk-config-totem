@@ -117,28 +117,28 @@
 
         nav_num {
             bindings = <
-        &kp LG(Z)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp K_APP          &kp F6         &kp HOME         &kp UP_ARROW         &kp END          &kp DELETE
-        &trans     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0    &kp BACKSPACE  &kp LEFT_ARROW   &kp DOWN_ARROW       &kp RIGHT_ARROW  &kp TAB
-&trans  &kp LC(Z)  &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3  &kp KP_DOT         &kp LBKT       &kp F7           &kp F2               &kp F10          &trans      &trans
-                                    &kp LEFT_GUI     &trans           &trans             &trans         &mt LC(X) LC(C)  &mt LA(LC(V)) LC(V)
+        &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp KP_N0     &kp F6         &kp HOME         &kp UP_ARROW         &kp END          &kp DELETE
+        &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_N4            &kp KP_N5     &kp BACKSPACE  &kp LEFT_ARROW   &kp DOWN_ARROW       &kp RIGHT_ARROW  &kp TAB
+&trans  &kp LC(Z)        &kp LC(K_APP)    &mt LC(X) LC(C)  &mt LA(LC(V)) LC(V)  &kp KP_DOT    &kp LBKT       &kp F7           &kp F2               &kp F10          &trans      &trans
+                                          &kp LEFT_GUI     &trans               &trans        &trans         &mt LC(X) LC(C)  &mt LA(LC(V)) LC(V)
             >;
         };
 
         sym_func {
             bindings = <
-        &trans     &kp N7  &kp N8        &kp N9        &kp K_APP    &kp SEMI          &kp SQT         &kp AMPS    &kp LS(N2)           &kp HASH
-        &trans     &kp N4  &kp N5        &kp N6        &kp N0       &kp BACKSPACE     &kp LS(FSLH)    &kp LS(N6)  &kp LS(N4)           &kp TAB
-&trans  &kp LC(Z)  &kp N1  &kp N2        &kp N3        &kp DOT      &kp LEFT_BRACKET  &kp EXCL        &kp PRCNT   &kp INTERNATIONAL_3  &trans    &trans
-                           &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP     &kp LANGUAGE_2    &kp LANGUAGE_1  &trans
+        &kp N6     &kp N7     &kp N8        &kp N9        &kp N0      &kp SEMI          &kp SQT         &kp AMPS    &kp LS(N2)           &kp HASH
+        &kp N1     &kp N2     &kp N3        &kp N4        &kp N5      &kp BACKSPACE     &kp LS(FSLH)    &kp LS(N6)  &kp LS(N4)           &kp TAB
+&trans  &kp LC(Z)  &kp K_APP  &none         &none         &kp DOT     &kp LEFT_BRACKET  &kp EXCL        &kp PRCNT   &kp INTERNATIONAL_3  &trans    &trans
+                              &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP    &kp LANGUAGE_2    &kp LANGUAGE_1  &trans
             >;
         };
 
         device {
             bindings = <
-        &trans     &none      &none          &none              &kp K_APP     &kp F11        &kp F7  &kp F8  &kp F9  &kp F10
-        &trans     &kp PG_UP  &none          &kp PG_DN          &none         &kp BACKSPACE  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &kp LC(Z)  &none      &none          &none              &none         &kp F12        &kp F1  &kp F2  &kp F3  &kp F12  &trans
-                              &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &kp LC(N1)    &none          &none   &none
+        &trans     &none          &none          &none              &kp K_APP     &kp F11        &kp F7  &kp F8  &kp F9  &kp F10
+        &trans     &kp LC(PG_UP)  &none          &kp LC(PG_DN)      &none         &kp BACKSPACE  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &kp LC(Z)  &kp K_APP      &none          &kp LC(N1)         &none         &kp F12        &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                                  &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &kp LC(N1)    &none          &none   &none
             >;
         };
 
