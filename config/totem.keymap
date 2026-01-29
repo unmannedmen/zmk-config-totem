@@ -127,19 +127,19 @@
 
         nav_num {
             bindings = <
-        &trans     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_N0            &kp F6         &kp HOME        &kp UP_ARROW    &kp END          &kp DELETE
-        &kp LC(Z)  &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_DOT           &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB
-&trans  &kp LC(Z)  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp K_APPLICATION    &kp LBKT       &kp F7          &kp F2          &kp F10          &trans      &trans
-                                    &kp LEFT_GUI     &trans           &trans               &trans         &kp LEFT_GUI    &kp LG(Z)
+        &trans     &kp N7  &kp N8        &kp N9  &kp N0               &kp F6         &kp HOME        &kp UP_ARROW    &kp END          &kp DELETE
+        &kp LC(Z)  &kp N4  &kp N5        &kp N6  &kp DOT              &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB
+&trans  &kp LC(Z)  &kp N1  &kp N2        &kp N3  &kp K_APPLICATION    &kp LBKT       &kp F7          &kp F2          &kp F10          &trans      &trans
+                           &kp LEFT_GUI  &trans  &trans               &trans         &kp LEFT_GUI    &kp LG(Z)
             >;
         };
 
         sym_func {
             bindings = <
-        &trans     &kp N7  &kp N8        &kp N9        &kp N0       &kp SEMI          &kp SQT              &kp AMPS    &kp LS(N2)           &kp DEL
-        &none      &kp N4  &kp N5        &kp N6        &kp DOT      &kp BACKSPACE     &kp EXCL             &kp LS(N6)  &kp HASH             &kp TAB
-&trans  &kp LC(Z)  &kp N1  &kp N2        &kp N3        &kp K_APP    &kp LEFT_BRACKET  &kp LS(N4)           &kp PRCNT   &kp INTERNATIONAL_3  &trans   &trans
-                           &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP     &mt LC(X) LC(C)   &mt LA(LC(V)) LC(V)  &trans
+        &trans     &kp KP_N7        &kp KP_N8  &kp KP_N9        &kp KP_N0       &kp SEMI          &kp SQT              &kp AMPS    &kp LS(N2)           &kp DEL
+        &none      &kp KP_NUMBER_4  &kp KP_N5  &kp KP_NUMBER_6  &kp KP_DOT      &kp BACKSPACE     &kp EXCL             &kp LS(N6)  &kp HASH             &kp TAB
+&trans  &kp LC(Z)  &kp KP_N1        &kp KP_N2  &kp KP_N3        &kp K_APP       &kp LEFT_BRACKET  &kp LS(N4)           &kp PRCNT   &kp INTERNATIONAL_3  &trans   &trans
+                                    &kp C_PP   &kp C_VOL_DN     &kp C_VOL_UP    &mt LC(X) LC(C)   &mt LA(LC(V)) LC(V)  &trans
             >;
         };
 
