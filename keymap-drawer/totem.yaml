@@ -3,42 +3,42 @@ layers:
   BASE:
   - Q
   - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
+  - E
+  - R
+  - T
   - Y
-  - ;
+  - U
+  - I
+  - O
+  - P
   - {t: A, h: LCTRL}
-  - {t: R, h: LALT}
-  - {t: S, h: LCMD}
-  - {t: T, h: LSHFT}
+  - S
+  - D
+  - F
   - G
-  - M
-  - {t: N, h: RSHFT}
-  - {t: E, h: RCMD}
-  - {t: I, h: RALT}
-  - {t: O, h: RCTRL}
-  - Meh+LCMD
+  - H
+  - J
+  - K
+  - L
+  - ENTER
+  - ESC
   - Z
   - X
   - C
-  - D
   - V
-  - K
-  - H
+  - B
+  - N
+  - M
   - ','
   - .
   - /
-  - {t: '''', h: AltGr+Sft+RIGHT CONTROL}
-  - {t: BACKSPACE, h: BT}
-  - {t: TAB, h: NAV_SHORT}
-  - DELETE
-  - {t: BACKSPACE, h: MEDIA}
-  - {t: SPACE, h: NUM_SYM}
-  - ENTER
+  - BSPC
+  - LGUI
+  - LALT
+  - {t: SPACE, h: NAV_SHORT}
+  - {t: Sft+SPACE, h: LCTRL}
+  - {t: TAB, h: RALT}
+  - RGUI
   NAV_SHORT:
   - Gui+Q
   - Gui+W
@@ -73,8 +73,8 @@ layers:
   - $
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -115,7 +115,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MEDIA:
   - BRIGHTNESS DEC
@@ -153,7 +153,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   BT:
@@ -189,7 +189,7 @@ layers:
   - ''
   - ''
   - BT CLR ALL
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
