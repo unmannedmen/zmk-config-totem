@@ -87,10 +87,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &kp Q        &kp W       &kp F            &kp P        &kp B         &kp J            &kp L        &kp U       &kp Y       &kp SEMI
-                      &mt LCTRL A  &mt LALT R  &mt LCMD S       &mt LSHFT T  &kp G         &kp M            &mt RSHFT N  &mt RCMD E  &mt RALT I  &mt RCTRL O
-&kp LS(LA(LC(LCMD)))  &kp Z        &kp X       &kp C            &kp D        &kp V         &kp K            &kp H        &kp COMMA   &kp DOT     &kp FSLH     &mt RA(RS(RIGHT_CONTROL)) SQT
-                                               &lt 4 BACKSPACE  &lt 1 TAB    &kp DELETE    &lt 3 BACKSPACE  &lt 2 SPACE  &kp ENTER
+         &kp Q        &kp W  &kp E     &kp R     &kp T          &kp Y                &kp U         &kp I      &kp O    &kp P
+         &mt LCTRL A  &kp S  &kp D     &kp F     &kp G          &kp H                &kp J         &kp K      &kp L    &kp ENTER
+&kp ESC  &kp Z        &kp X  &kp C     &kp V     &kp B          &kp N                &kp M         &kp COMMA  &kp DOT  &kp FSLH   &kp BSPC
+                             &kp LGUI  &kp LALT  &lt 1 SPACE    &mt LCTRL LS(SPACE)  &mt RALT TAB  &kp RGUI
             >;
         };
 
