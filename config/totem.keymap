@@ -87,10 +87,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q        &kp W  &kp E     &kp R     &kp T          &kp Y                &kp U         &kp I      &kp O    &kp P
-         &mt LCTRL A  &kp S  &kp D     &kp F     &kp G          &kp H                &kp J         &kp K      &kp L    &kp ENTER
-&kp ESC  &kp Z        &kp X  &kp C     &kp V     &kp B          &kp N                &kp M         &kp COMMA  &kp DOT  &kp FSLH   &kp BSPC
-                             &kp LGUI  &kp LALT  &lt 1 SPACE    &mt LCTRL LS(SPACE)  &mt RALT TAB  &kp RGUI
+               &kp Q        &kp W        &kp E     &kp R        &kp T          &kp Y                &kp U         &kp I      &kp O    &kp P
+               &mt LCTRL A  &lt 2 S      &lt 3 D   &kp F        &kp G          &kp H                &kp J         &kp K      &kp L    &kp ENTER
+&mt LSHFT ESC  &kp Z        &mt LSHFT X  &kp C     &mt LCTRL V  &kp B          &kp N                &kp M         &kp COMMA  &kp DOT  &kp FSLH   &mt LSHFT BACKSPACE
+                                         &kp LGUI  &kp LALT     &lt 1 SPACE    &mt LCTRL LS(SPACE)  &mt RALT TAB  &kp RGUI
             >;
         };
 
@@ -113,10 +113,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp LG(Q)            &kp LG(W)  &kp LG(F)  &kp GRAVE             &kp LC(LG(LS(C)))          &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &none
-            &kp LG(A)            &trans     &trans     &mt LEFT_SHIFT LG(T)  &kp LG(LS(V))              &mt LC(A) H   &kp J           &kp K         &mt LC(E) L  &kp ESCAPE
-&kp DELETE  &mt LG(LS(Z)) LG(Z)  &kp LG(X)  &kp LG(C)  &kp TAB               &mt LA(LG(LS(V))) LG(V)    &kp NUMBER_0  &kp LC(D)       &kp SPACE     &kp LC(U)    &kp DOLLAR  &trans
-                                            &trans     &trans                &trans                     &trans        &trans          &trans
+        &kp LC(Z)            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &kp F6            &kp HOME        &kp UP_ARROW    &kp END          &kp DEL
+        &mt LC(X) LC(C)      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DOT         &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB
+&trans  &mt LC(LA(V)) LC(V)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp K_APP          &kp LEFT_BRACKET  &kp F7          &kp F2          &kp F10          &trans   &trans
+                                              &trans           &trans           &trans             &trans            &trans          &trans
             >;
         };
 
@@ -139,10 +139,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp F1              &kp F2                 &kp F3             &kp F4                   &kp F5          &kp GRAVE     &kp MINUS                 &kp EQUAL          &kp LEFT_BRACKET        &kp RIGHT_BRACKET
-        &mt LCTRL NUMBER_1  &mt LEFT_ALT NUMBER_2  &mt LGUI NUMBER_3  &mt LEFT_SHIFT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &mt RIGHT_SHIFT NUMBER_7  &mt RGUI NUMBER_8  &mt RIGHT_ALT NUMBER_9  &mt RCTRL NUMBER_0
-&trans  &kp F6              &kp F7                 &kp F8             &kp F9                   &kp F10         &mt F12 F11   &kp BACKSLASH             &trans             &trans                  &trans              &trans
-                                                   &trans             &trans                   &trans          &trans        &trans                    &trans
+        &trans               &none  &kp UP_ARROW      &kp F4           &kp F5              &kp SEMI       &kp SQT           &kp AMPS          &kp LS(NUMBER_2)     &kp HASH
+        &mt LC(X) LC(C)      &none  &kp LEFT_ARROW    &kp RIGHT_ARROW  &kp PG_UP           &kp BACKSPACE  &kp EXCL          &kp LS(NUMBER_6)  &kp LS(FSLH)         &kp TAB
+&trans  &mt LA(LC(V)) LC(V)  &none  &kp DOWN_ARROW    &kp LCTRL        &kp PAGE_DOWN       &kp LBKT       &kp LS(NUMBER_4)  &kp PRCNT         &kp INTERNATIONAL_3  &trans    &trans
+                                    &kp LC(NUMBER_0)  &kp LC(MINUS)    &kp LC(LS(SEMI))    &trans         &trans            &trans
             >;
         };
 
