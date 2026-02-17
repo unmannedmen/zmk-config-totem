@@ -34,11 +34,11 @@ layers:
   - /
   - {t: BACKSPACE, h: LSHFT}
   - LGUI
-  - LALT
+  - {t: INTERNATIONAL 4, h: LALT}
   - {t: SPACE, h: NAV_SHORT}
   - {t: Sft+SPACE, h: LCTRL}
   - {t: TAB, h: RALT}
-  - RGUI
+  - {t: INTERNATIONAL 5, h: BT}
   NAV_SHORT:
   - Ctl+Z
   - KP 7
@@ -77,13 +77,13 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT GUI
   NUM_SYM:
   - {t: ▽, type: trans}
   - ''
   - UP ARROW
-  - F4
-  - F5
+  - ''
+  - ''
   - ;
   - ''''
   - '&'
@@ -118,83 +118,83 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MEDIA:
-  - BRIGHTNESS DEC
-  - MUTE
-  - VOL DN
-  - VOL UP
-  - BRIGHTNESS INC
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - PREV
-  - NEXT
-  - {t: STOP, type: held}
-  - PLAY PAUSE
-  - ''
-  - ''
-  - ''
-  - Gui+Ctl+Sft+4
-  - ''
-  - Alt+Gui+ESCAPE
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: ▽, type: trans}
+  - ''
+  - ''
+  - '&msc SCRL_UP'
+  - ''
+  - ''
+  - F7
+  - F8
+  - F9
+  - F10
+  - Ctl+PG UP
+  - Ctl+1
+  - {type: held}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_RIGHT'
+  - BSPC
+  - F4
+  - F5
+  - F6
+  - F11
   - {t: ▽, type: trans}
+  - Ctl+PAGE DOWN
+  - Sft+F11
+  - ''
+  - '&msc SCRL_DOWN'
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F12
   - {t: ▽, type: trans}
+  - LALT
+  - Ctl+Alt+-
+  - Meh+-
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   BT:
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&ind_bat'
-  - '&ind_con'
-  - BT PRV
-  - BT NXT
-  - OUT TOG
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR
+  - '4'
+  - '5'
+  - '6'
+  - .
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '2'}
   - {t: BT DISC, h: '3'}
   - {t: BT DISC, h: '4'}
+  - {t: ▽, type: trans}
   - ''
+  - '1'
+  - '2'
+  - '3'
+  - APP
   - ''
+  - BT PRV
   - ''
-  - ''
-  - ''
+  - BT NXT
   - BT CLR ALL
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [27, 28]
   k: ENTER
