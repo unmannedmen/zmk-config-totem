@@ -34,34 +34,69 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_entr_r {
-            bindings = <&kp ENTER>;
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <12 13>;
+        };
+
+        shifttab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <12 11>;
+        };
+
+        leftkakko {
+            bindings = <&kp LS(N8)>;
+            key-positions = <11 13>;
+        };
+
+        rightkakko {
+            bindings = <&kp LS(N9)>;
+            key-positions = <16 18>;
+        };
+
+        leftkakkojp {
+            bindings = <&kp RBKT>;
+            key-positions = <11 13 12>;
+        };
+
+        rightkakkojp {
+            bindings = <&kp BSLH>;
+            key-positions = <16 18 17>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <16 17>;
+        };
+
+        plus {
+            bindings = <&kp LS(SEMI)>;
+            key-positions = <17 18>;
+        };
+
+        eq {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <7 6>;
+        };
+
+        asta {
+            bindings = <&kp LS(SQT)>;
+            key-positions = <7 8>;
+        };
+
+        underbar {
+            bindings = <&kp LS(INTERNATIONAL_1)>;
             key-positions = <27 28>;
         };
 
-        combo_entr_l {
-            bindings = <&kp ENTER>;
-            key-positions = <24 23>;
+        lang1 {
+            bindings = <&kp LANG1>;
+            key-positions = <35 16>;
         };
 
-        combo_bksp_r {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <15 16>;
-        };
-
-        combo_del_r {
-            bindings = <&kp DELETE>;
-            key-positions = <26 27>;
-        };
-
-        combo_esc_r {
-            bindings = <&kp ESCAPE>;
-            key-positions = <6 7>;
-        };
-
-        combo_esc_l {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
+        lang2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <35 15>;
         };
     };
 
