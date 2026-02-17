@@ -196,15 +196,29 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
 combos:
+- p: [12, 13]
+  k: TAB
+- p: [12, 11]
+  k: Sft+TAB
+- p: [11, 13]
+  k: Sft+8
+- p: [16, 18]
+  k: Sft+9
+- p: [11, 13, 12]
+  k: ']'
+- p: [16, 18, 17]
+  k: \
+- p: [16, 17]
+  k: '-'
+- p: [17, 18]
+  k: Sft+;
+- p: [7, 6]
+  k: Sft+-
+- p: [7, 8]
+  k: Sft+'
 - p: [27, 28]
-  k: ENTER
-- p: [24, 23]
-  k: ENTER
-- p: [15, 16]
-  k: BACKSPACE
-- p: [26, 27]
-  k: DELETE
-- p: [6, 7]
-  k: ESCAPE
-- p: [2, 3]
-  k: ESCAPE
+  k: Sft+INTERNATIONAL 1
+- p: [35, 16]
+  k: LANG1
+- p: [35, 15]
+  k: LANGUAGE 2
