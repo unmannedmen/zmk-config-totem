@@ -12,8 +12,8 @@ layers:
   - O
   - P
   - {t: A, h: LCTRL}
-  - S
-  - D
+  - {t: S, h: NUM_SYM}
+  - {t: D, h: MEDIA}
   - F
   - G
   - H
@@ -21,18 +21,18 @@ layers:
   - K
   - L
   - ENTER
-  - ESC
+  - {t: ESC, h: LSHFT}
   - Z
-  - X
+  - {t: X, h: LSHFT}
   - C
-  - V
+  - {t: V, h: LCTRL}
   - B
   - N
   - M
   - ','
   - .
   - /
-  - BSPC
+  - {t: BACKSPACE, h: LSHFT}
   - LGUI
   - LALT
   - {t: SPACE, h: NAV_SHORT}
@@ -40,37 +40,37 @@ layers:
   - {t: TAB, h: RALT}
   - RGUI
   NAV_SHORT:
-  - Gui+Q
-  - Gui+W
-  - Gui+F
-  - '`'
-  - Ctl+Gui+Sft+C
-  - LEFT
-  - DOWN ARROW
+  - Ctl+Z
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP 0
+  - F6
+  - HOME
   - UP ARROW
-  - RIGHT
-  - ''
-  - Gui+A
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: Gui+T, h: LEFT SHIFT}
-  - Gui+Sft+V
-  - {t: H, h: Ctl+A}
-  - J
-  - K
-  - {t: L, h: Ctl+E}
-  - ESCAPE
-  - DELETE
-  - {t: Gui+Z, h: Gui+Sft+Z}
-  - Gui+X
-  - Gui+C
+  - END
+  - DEL
+  - {t: Ctl+C, h: Ctl+X}
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP DOT
+  - BACKSPACE
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - TAB
-  - {t: Gui+V, h: Alt+Gui+Sft+V}
-  - '0'
-  - Ctl+D
-  - SPACE
-  - Ctl+U
-  - $
+  - {t: ▽, type: trans}
+  - {t: Ctl+V, h: Ctl+Alt+V}
+  - KP 1
+  - KP 2
+  - KP 3
+  - APP
+  - '['
+  - F7
+  - F2
+  - F10
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -79,41 +79,41 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM_SYM:
-  - F1
-  - F2
-  - F3
+  - {t: ▽, type: trans}
+  - ''
+  - UP ARROW
   - F4
   - F5
-  - '`'
-  - '-'
-  - '='
+  - ;
+  - ''''
+  - '&'
+  - Sft+2
+  - '#'
+  - {t: Ctl+C, h: Ctl+X}
+  - {type: held}
+  - LEFT ARROW
+  - RIGHT ARROW
+  - PG UP
+  - BACKSPACE
+  - '!'
+  - Sft+6
+  - Sft+/
+  - TAB
+  - {t: ▽, type: trans}
+  - {t: Ctl+V, h: Alt+Ctl+V}
+  - ''
+  - DOWN ARROW
+  - LCTRL
+  - PAGE DOWN
   - '['
-  - ']'
-  - {t: '1', h: LCTRL}
-  - {t: '2', h: LEFT ALT}
-  - {t: '3', h: LGUI}
-  - {t: '4', h: LEFT SHIFT}
-  - '5'
-  - '6'
-  - {t: '7', h: RIGHT SHIFT}
-  - {t: '8', h: RGUI}
-  - {t: '9', h: RIGHT ALT}
-  - {t: '0', h: RCTRL}
-  - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - {t: F11, h: F12}
-  - \
+  - Sft+4
+  - '%'
+  - INTERNATIONAL 3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+0
+  - Ctl+-
+  - Ctl+Sft+;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -130,7 +130,7 @@ layers:
   - ''
   - PREV
   - NEXT
-  - STOP
+  - {t: STOP, type: held}
   - PLAY PAUSE
   - ''
   - ''
